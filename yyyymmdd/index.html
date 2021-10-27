@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="index,follow">
+
+  <title>Marius Müller</title>
+  <meta name="description" content="Marius Müller (geb. 2000, Karlsruhe) ist ein interdisziplinärer Gestalter ansässig in Karlsruhe, Deutschland. Er beschäftigt sich vor allem auf theoretischer Basis mit gestalt-/ medientheoretischen Problemen und deren Anwendungen.">
+  <meta name="author" content="Marius Müller">
+
+  <meta property="og:title" content="Marius Müller">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yyyymmdd.org">
+  <meta property="og:description" content="Marius Müller (geb. 2000, Karlsruhe) ist ein interdisziplinärer Gestalter ansässig in Karlsruhe, Deutschland. Er beschäftigt sich vor allem auf theoretischer Basis mit gestalt-/ medientheoretischen Problemen und deren Anwendungen.">
+
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+      function display_c(){
+      var refresh=1000; // Refresh rate in milli seconds
+      mytime=setTimeout('datum()',refresh)
+      }
+
+      function datum() {
+      var x = new Date();
+      document.getElementById('datum').innerHTML = x; display_c();
+      }
+  </script>
+
+<!--Tab Text Change Script-->
+
+  <script>
+  window.onload = function() {
+
+    var pageTitle = document.title;
+    var attentionMessage = '!!!Click here!!!';
+    var blinkEvent = null;
+
+    document.addEventListener('visibilitychange', function(e) {
+      var isPageActive = !document.hidden;
+
+      if(!isPageActive){
+        blink();
+      }else {
+        document.title = pageTitle;
+        clearInterval(blinkEvent);
+      }
+    });
+
+    function blink(){
+      blinkEvent = setInterval(function() {
+        if(document.title === attentionMessage){
+          document.title = pageTitle;
+        }else {
+          document.title = attentionMessage;
+        }
+      }, 100);
+    }
+  };
+  </script>
+</head>
+
+<body onmouseenter="datum()">
+  <div class="page-wrapper">
+  <div class="info-top">
+    <div class="info-top-left">
+    <p class="info-text"><span class="info-en"><b>Marius Müller</b> (b. 2000, Karlsruhe) is an interdisciplinary designer living in Karlsruhe, Germany. He studied applied Media Design (B.A.) at the DHBW Ravesburg and is currently enrolled for a Magistra Artium in <i>Art Research and Media Philosophy</i> at the University of Arts and Design Karlsruhe. Marius research-based practice revolves around <i>design and media theoretical problems</i> and their application. Detailed information and cv as well as enquiries upon request. <b>(EN)</b></span><span class="info-de"><b>Marius Müller</b> (geb. 2000, Karlsruhe) ist ein interdisziplinärer Gestalter ansässig in Karlsruhe, Deutschland. Er studierte Mediendesign (B.A.) an der Dualen Hochschule Ravensburg und absolviert derzeit einen Magister Artium in <i>Kunstwissenschaften und Medienphilosophie</i> an der Hochschule für Gestaltung Karlsruhe. Marius beschäftigt sich vor allem auf theoretischer Basis mit <i>gestalt-/ medientheoretischen Problemen</i> und deren Anwendungen. Detaillierte Informationen und Curriculum Vitae sowie Anfragen auf Nachfrage. <b>(DE)</b></span></p>
+    </div>
+  <div class="info-top-right">
+    <a href="mailto:marius@yyyymmdd.org">marius@yyyymmdd.org</a>
+    <p id='datum'></p>
+    <a href="https://plyg.yyyymmdd.org/" class="emoji">&#x1F6A8;</a>
+  </div>
+  </div>
+
+  <div class="content">
+    <div class="content-group" id="es-ist-alles-eitel">
+    <img src="img/DHBW-EsIstAllesEitel-20210918.jpg" class="content-img">
+    <b class="content-title">Es ist alles eitel., Book, Marius Müller, 2021</b>
+    </div>
+
+    <div class="content-group" id="offtonoewgrounds">
+    <img src="img/DHBW-OffToNewGrounds-20210918.jpg" class="content-img">
+    <b class="content-title">Off to new grounds, Website, DHBW Ravensburg, 2021</b>
+    </div>
+
+    <div class="content-group" id="creeks">
+    <img src="img/DHBW-715CREEKS-201906.jpg" class="content-img">
+    <b class="content-title">715 - CRΣΣKS, Visualization, Bon Iver, 2019</b>
+    </div>
+
+    <div class="content-group" id="schreibwerkstatt">
+    <img src="img/DHBW-SchreibwerkstattMediendesign-20190726.jpg" class="content-img">
+    <b class="content-title">Schreibwerkstatt Mediendesign, Poster, Marius Müller, 2019</b>
+    </div>
+  </div>
+</div>
+</body>
+</html>

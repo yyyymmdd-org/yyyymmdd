@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+	display: inline-block;
+    font-size: initial;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+b, a {
+  font-family: sans-serif;
+}
+
+b {
+  font-weight: 500;
+}
+
+#datum {
+  text-align: right;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.info-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+  background-color: #fff;
+}
+
+.info-top-left {
+  width: 60%;
+}
+
+.info-top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.info-en {display: block;}
+
+.info-de {display: none;}
+
+.info-text:hover .info-en {display: none;}
+.info-text:hover .info-de {display: block;}
+
+.emoji {
+  font-family: Apple Color Emoji;
+  text-decoration: none;
+  cursor: help;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100vw;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.content-group {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+}
+
+.content-title {
+  bottom: 0;
+  color: #fff;
+  mix-blend-mode: difference;
+  padding-right: 1vh;
+  padding-bottom: 1vh;
+}
+
+.content-img {
+  height: 100%;
+  opacity: 0;
+}
+
+#es-ist-alles-eitel {
+  background-image: url(img/DHBW-EsIstAllesEitel-20210918.jpg);
+}
+
+#offtonoewgrounds {
+  background-image: url(img/DHBW-OffToNewGrounds-20210918.jpg);
+}
+
+#schreibwerkstatt {
+  background-image: url(img/DHBW-SchreibwerkstattMediendesign-20190726.jpg);
+}
+
+#creeks {
+  background-image: url(img/DHBW-715CREEKS-201906.jpg);
+}
+
+@media only screen and (max-width: 495px) {
+
+.info-top {
+  flex-direction: column;
+}
+
+.info-top-left {
+  width: 100%;
+  padding-bottom: 1vh;
+}
+
+.info-top-right {
+  align-items: flex-start;
+}
+
+#datum {
+  text-align: left;
+}
+
+.content-title {
+  width: 50%;
+  text-align: right;
+  font-size: small;
+}
+
+.content-img {
+  height: 65vh;
+}
+
+}
