@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+b, a {
+  font-family: sans-serif;
+}
+
+b {
+  font-weight: 500;
+}
+
+#datum {
+  text-align: right;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.info-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+  background-color: #fff;
+}
+
+.info-top-left {
+  width: 60%;
+}
+
+.info-top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.info-en {display: block;}
+
+.info-de {display: none;}
+
+.info-text:hover .info-en {display: none;}
+.info-text:hover .info-de {display: block;}
+
+.emoji {
+  font-family: Apple Color Emoji;
+  text-decoration: none;
+  cursor: help;
+}
+
+.plyg-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  background-image: url(img/PLYG-WindowsBG-I-20211019.jpeg);
+  background-size: cover;
+}
+
+.spinner-wrap {
+    filter: url(#filter);
+}
+
+.spinner-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+svg {
+  position: absolute;
+}
+
+.spinner {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: no-drop;
+}
+.spinner div {
+  transform-origin: 40px 40px;
+  animation: spinner 1.2s linear infinite;
+}
+.spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 37px;
+  width: 8px;
+  height: 25px;
+  border-radius: 20%;
+  background: #fff;
+}
+.spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 495px) {
+
+.info-top {
+  flex-direction: column;
+}
+
+.info-top-left {
+  width: 100%;
+  padding-bottom: 1vh;
+}
+
+.info-top-right {
+  align-items: flex-start;
+}
+
+#datum {
+  text-align: left;
+}
+
+}
