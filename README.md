@@ -1,1 +1,5 @@
-# yyyymmdd
+### yyyymmdd
+
+**Marius Müller** (b. 2000, Karlsruhe) is an interdisciplinary designer living in Karlsruhe, Germany. He studied applied Media Design (B.A.) at the DHBW Ravesburg and is currently enrolled for a Magistra Artium in _Art Research and Media Philosophy_ at the University of Arts and Design Karlsruhe. Marius research-based practice revolves around _design and media theoretical problems_ and their application. Detailed information and cv as well as enquiries upon request. **(EN)**
+
+**Marius Müller** (geb. 2000, Karlsruhe) ist ein interdisziplinärer Gestalter ansässig in Karlsruhe, Deutschland. Er studierte Mediendesign (B.A.) an der Dualen Hochschule Ravensburg und absolviert derzeit einen Magister Artium in _Kunstwissenschaften und Medienphilosophie_ an der Hochschule für Gestaltung Karlsruhe. Marius beschäftigt sich vor allem auf theoretischer Basis mit _gestalt-/ medientheoretischen Problemen_ und deren Anwendungen. Detaillierte Informationen und Curriculum Vitae sowie Anfragen auf Nachfrage. **(DE)**
